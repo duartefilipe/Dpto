@@ -12,7 +12,7 @@
 	<nav class="navbar navbar-default navbar-static-top">
 	<div class="container">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="#">Projeto final geociências</a>
+			<a class="navbar-brand" href="index.jsp">Projeto final geociências</a>
 		</div>
 
 		<div id="navbar" class="navbar-collapse collapse">
@@ -48,13 +48,14 @@
 		<div class="row">
 			<div class="jumbotron">
 				<div class="container">
-				<div class="container">
-		<div class="row">
-			<div align="center">
-				<img class="img-responsive" src="http://w3.ufsm.br/ccne/images/ccne_logo.png">
-			</div>
-		</div>
-	</div>
+					<div class="container">
+						<div class="row">
+							<div align="center">
+								<img class="img-responsive"
+									src="http://w3.ufsm.br/ccne/images/ccne_logo.png">
+							</div>
+						</div>
+					</div>
 					<div class="col-md-3">
 						<div class="list-group">
 							<a href="#" class="list-group-item"> Formularios </a> <a href="#"
@@ -67,24 +68,39 @@
 					<div class="col-md-9">
 						<div class="list-group">
 							<nav class="navbar navbar-default navbar-static-top">
-							<div class="container">
-									<h3 align="center">Noticias</h3>
-									<hr>
-									<p>noticia noticia noticia <br>
-									noticia noticia noticia <br>
-									noticia noticia noticia <br>
-									noticia noticia noticia <br>
-									noticia noticia noticia <br>
-									noticia noticia noticia <br>
-									noticia noticia noticia <br>
-									noticia noticia noticia <br>
-									noticia noticia noticia <br>
-									noticia noticia noticia <br></p>
-									
+								<div class="container">
+									<form action="/Dpto/MVC?logica=CadastrarProfessor" method="post">
+										<div class="form-group">
+											<h2 align="center">Cadastrar Professores</h2>
+												<label>Nome:</label>
+												<input class="form-control" type="text" id="nome" name="nome" />
+												<br />
+												<label>SIAPE:</label>
+												<input class="form-control" type="text" id="siape" name="siape"/>
+												<br />
+												<label>Ramal:</label>
+												<input class="form-control" type="text" id="ramal" name="ramal"/>
+												<br />
+												<label>Celular:</label>
+												<input class="form-control" type="text" id="celular" name="celular"/>
+												<br />
+												<label>Sala:</label>
+												<input class="form-control" type="text" id="sala" name="sala"/>
+												<br />
+												<label>CPF:</label>
+												<input class="form-control" type="text" id="cpf" name="cpf"/>
+												<br />
+												<label>Identidade:</label>
+												<input class="form-control" type="text" id="identidade" name="idaentidade"/>
+												<br />
+												<label>Email:</label>
+												<input class="form-control" type="text" id="email" name="email"/>
+												<br />
+												<button class="btn btn-primary" type="submit">Cadastrar</button>
+										</div>
+									</form>
 								</div>
-							</div>
 							</nav>
-
 						</div>
 					</div>
 				</div>
@@ -93,10 +109,10 @@
 	</div>
 
 
-
-
-	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="js/bootstrap.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
 </body>
 </html>
+
+
+
