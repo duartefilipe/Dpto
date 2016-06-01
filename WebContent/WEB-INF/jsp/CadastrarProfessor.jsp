@@ -72,32 +72,32 @@
 						<div class="list-group">
 							<nav class="navbar navbar-default navbar-static-top">
 								<div class="container">
-									<form action="/Dpto/MVC?logica=RedirecionaCadastraProfessor" method="post">
+									<form action="/Dpto/MVC?logica=CadastrarProfessor" method="post">
 										<div class="form-group">
 											<h2 align="center">Cadastrar Professores</h2>
-												<label>Nome:</label>
-												<input class="form-control" type="text" id="nome" name="nome" value="${professores.nome}"/>
+												<label for="nome">Nome:</label>
+												<input class="form-control" type="text" id="nome" name="nome"/>
 												<br />
-												<label>SIAPE:</label>
-												<input class="form-control" type="text" id="siape" name="siape" value="${professores.siape}"/>
+												<label for="siape">SIAPE:</label>
+												<input class="form-control" type="text" id="siape" name="siape"/>
 												<br />
-												<label>Ramal:</label>
-												<input class="form-control" type="text" id="ramal" name="ramal" value="${professores.ramal}"/>
+												<label for="ramal">Ramal:</label>
+												<input class="form-control" type="text" id="ramal" name="ramal"/>
 												<br />
-												<label>Celular:</label>
-												<input class="form-control" type="text" id="celular" name="celular" value="${professores.celular}"/>
+												<label for="celular">Celular:</label>
+												<input class="form-control" type="text" id="celular" name="celular"/>
 												<br />
-												<label>Sala:</label>
-												<input class="form-control" type="text" id="sala" name="sala" value="${professores.sala}"/>
+												<label for="sala">Sala:</label>
+												<input class="form-control" type="text" id="sala" name="sala"/>
 												<br />
-												<label>CPF:</label>
-												<input class="form-control" type="text" id="cpf" name="cpf" value="${professores.cpf}"/>
+												<label for="cpf">CPF:</label>
+												<input class="form-control" type="text" id="cpf" name="cpf"/>
 												<br />
-												<label>Identidade:</label>
-												<input class="form-control" type="text" id="identidade" name="idaentidade" value="${professores.identidade}"/>
+												<label for="identidade">Identidade:</label>
+												<input class="form-control" type="text" id="identidade" name="idaentidade"/>
 												<br />
-												<label>Email:</label>
-												<input class="form-control" type="text" id="email" name="email" value="${professores.email}"/>
+												<label for="email">Email:</label>
+												<input class="form-control" type="text" id="email" name="email"/>
 												<br />
 												<button class="btn btn-primary" type="submit">Cadastrar</button>
 										</div>

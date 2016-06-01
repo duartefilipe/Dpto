@@ -34,8 +34,7 @@ public class ProfessorDAO {
 				int identidade = prof.getIdentidade();
 				String email = prof.getEmail();
 				
-				
-				String sql ="INSERT INTO professor (nome,siape,ramal,celular,sala) values(?,?,?,?,?)";
+				String sql ="INSERT INTO professor (nome,siape,ramal,celular,sala,cpf,identidade,email) values(?,?,?,?,?,?,?,?)";
 				PreparedStatement stmt  = con.prepareStatement(sql);
 				stmt.setString(1, nome);
 				stmt.setInt(2, siape);
@@ -45,11 +44,11 @@ public class ProfessorDAO {
 				stmt.setInt(6, cpf);
 				stmt.setInt(7, identidade);
 				stmt.setString(8, email);
-				
 				stmt.executeUpdate();
 				retorno=true;
-
-			//caso seja update
+				
+				
+				//caso seja update
 			}else{
 				System.out.println("Update de professor");
 				String nome = prof.getNome();
@@ -72,20 +71,15 @@ public class ProfessorDAO {
 				stmt.setInt(7, prof.getIdentidade());
 				stmt.setString(8, prof.getEmail());
 				stmt.setInt(6, prof.getId());
-				
 				stmt.executeUpdate();
 				retorno=true;
-			}
-			
-			
-			
+			}	
 		}catch(SQLException e){
 			e.printStackTrace();
-			
 		}
-		return retorno;
+	return retorno;
 	}
-	
+		
 	public long buscacodigo() throws SQLException {
 		Connection c = null;
 		PreparedStatement stmt = null;
@@ -101,7 +95,6 @@ public class ProfessorDAO {
 		rs.close();
 		stmt.close();
 		return codigo;
-
 	}
 	
 	
@@ -135,13 +128,10 @@ public class ProfessorDAO {
 		}catch(SQLException e){
 			e.printStackTrace();
 		}
-
 		return log;
-		
 	}
 	
 	public Professor getProfessor(int id){	
-		
 		Connection con = ConectBancoDeDados.getConexao();
 		Professor prof = new Professor();;
 		try{
@@ -169,14 +159,12 @@ public class ProfessorDAO {
 		}
 		
 		return prof;
-		
 	}
 	
 	public void removerUsuario(int id){
-		
 		Connection con = ConectBancoDeDados.getConexao();
-		
 		System.out.println("Deletar professor");
+		
 		try{
 			
 			String sql = "DELETE FROM professor WHERE id=?";
@@ -187,7 +175,5 @@ public class ProfessorDAO {
 		}catch(SQLException e){
 			e.printStackTrace();
 		}
-	}
-	
-	
+	}	
 }

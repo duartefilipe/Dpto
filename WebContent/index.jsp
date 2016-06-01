@@ -30,13 +30,13 @@
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
 					data-toggle="dropdown">Funcionarios<b class="caret"></b></a>
 					<ul class="dropdown-menu">
-						<li><a href="#destaques">funcionario 1</a></li>
+						<li><a href="MVC?logica=RedirecionaCadastraFuncionario">Cadastrar</a></li>
 						<li><a href="#produto">funcionario 2</a></li>
 					</ul>
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
 					data-toggle="dropdown">bolsistas<b class="caret"></b></a>
 					<ul class="dropdown-menu">
-						<li><a href="#destaques">bolsista 1</a></li>
+						<li><a href="MVC?logica=RedirecionaCadastraBolsista">Cadastrar</a></li>
 						<li><a href="#produto">bolsista 2</a></li>
 					</ul></li>
 				</li>
@@ -70,18 +70,37 @@
 						<div class="list-group">
 							<nav class="navbar navbar-default navbar-static-top">
 							<div class="container">
-									<h3 align="center">Noticias</h3>
+									<b><h1 align="center">Avisos</h1></b>
 									<hr>
-									<p>noticia noticia noticia <br>
-									noticia noticia noticia <br>
-									noticia noticia noticia <br>
-									noticia noticia noticia <br>
-									noticia noticia noticia <br>
-									noticia noticia noticia <br>
-									noticia noticia noticia <br>
-									noticia noticia noticia <br>
-									noticia noticia noticia <br>
-									noticia noticia noticia <br></p>
+									<div class="thumbnail text text-center">
+									<b><h2>titulo</h2></b>
+									<hr>
+									<p align="center">noticia noticia noticia <br>
+									noticia noticia noticia 
+									noticia noticia noticia 
+									noticia noticia noticia 
+									noticia noticia noticia 
+									noticia noticia noticia 
+									noticia noticia noticia 
+									noticia noticia noticia 
+									noticia noticia noticia 
+									noticia noticia noticia </p>
+									</div>
+									
+									<div class="thumbnail text text-center">
+									<b><h2>titulo</h2></b>
+									<hr>
+									<p align="center">noticia noticia noticia <br>
+									noticia noticia noticia 
+									noticia noticia noticia 
+									noticia noticia noticia 
+									noticia noticia noticia 
+									noticia noticia noticia 
+									noticia noticia noticia 
+									noticia noticia noticia 
+									noticia noticia noticia 
+									noticia noticia noticia </p>
+									</div>
 									
 								</div>
 							</div>
