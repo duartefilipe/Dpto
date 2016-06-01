@@ -4,7 +4,7 @@ public class Professor {
 	
 	private int id;
 	private String nome;
-	private long siape;
+	private int siape;
 	private int ramal;
 	private int celular;
 	private String sala;
@@ -43,10 +43,10 @@ public class Professor {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public long getSiape() {
+	public int getSiape() {
 		return siape;
 	}
-	public void setSiape(long siape) {
+	public void setSiape(int siape) {
 		this.siape = siape;
 	}
 	public int getRamal() {

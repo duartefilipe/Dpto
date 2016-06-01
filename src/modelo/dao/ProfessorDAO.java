@@ -26,7 +26,7 @@ public class ProfessorDAO {
 			{
 				System.out.println("Cadastro de novo professor");
 				String nome = prof.getNome();
-				long siape = prof.getSiape();
+				int siape = prof.getSiape();
 				int ramal = prof.getRamal();
 				int celular = prof.getCelular();
 				String sala = prof.getSala();	
@@ -38,7 +38,7 @@ public class ProfessorDAO {
 				String sql ="INSERT INTO professor (nome,siape,ramal,celular,sala) values(?,?,?,?,?)";
 				PreparedStatement stmt  = con.prepareStatement(sql);
 				stmt.setString(1, nome);
-				stmt.setLong(2, siape);
+				stmt.setInt(2, siape);
 				stmt.setInt(3, ramal);
 				stmt.setInt(4, celular);
 				stmt.setString(5, sala);
@@ -53,7 +53,7 @@ public class ProfessorDAO {
 			}else{
 				System.out.println("Update de professor");
 				String nome = prof.getNome();
-				long siape = prof.getSiape();
+				int siape = prof.getSiape();
 				int ramal = prof.getRamal();
 				int celular = prof.getCelular();
 				String sala = prof.getSala();
@@ -64,7 +64,7 @@ public class ProfessorDAO {
 				String sql ="UPDATE professor SET nome=?, siape=?, ramal=?, celular=?, sala=?, cpf=?, identidade=?, email=? WHERE id=?";
 				PreparedStatement stmt  = con.prepareStatement(sql);
 				stmt.setString(1, prof.getNome());
-				stmt.setLong(2, prof.getSiape());
+				stmt.setInt(2, prof.getSiape());
 				stmt.setInt(3, prof.getRamal());
 				stmt.setInt(4, prof.getCelular());
 				stmt.setString(5, prof.getSala());
@@ -121,7 +121,7 @@ public class ProfessorDAO {
 				prof = new Professor();
 				prof.setId(rs.getInt("id"));
 				prof.setNome(rs.getString("nome"));
-				prof.setSiape(rs.getLong("siape"));
+				prof.setSiape(rs.getInt("siape"));
 				prof.setRamal(rs.getInt("ramal"));
 				prof.setCelular(rs.getInt("celular"));
 				prof.setSala(rs.getString("sala"));
@@ -154,7 +154,7 @@ public class ProfessorDAO {
 			{
 				prof.setId(rs.getInt("id"));
 				prof.setNome(rs.getString("nome"));
-				prof.setSiape(rs.getLong("siape"));
+				prof.setSiape(rs.getInt("siape"));
 				prof.setRamal(rs.getInt("ramal"));
 				prof.setCelular(rs.getInt("celular"));
 				prof.setSala(rs.getString("sala"));

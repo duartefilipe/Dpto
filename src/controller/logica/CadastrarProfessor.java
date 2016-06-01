@@ -9,9 +9,9 @@ import modelo.dao.ProfessorDAO;
 public class CadastrarProfessor implements Logica {
 
 	public String executa(HttpServletRequest rq, HttpServletResponse rp) {
-		System.out.println(".......... dentro de cadastrar produto...............");
+		System.out.println(".......... dentro de cadastrar professor...............");
 		String nome = rq.getParameter("nome");
-		long siape = Long.parseLong(rq.getParameter("siape"));
+		int siape = Integer.parseInt(rq.getParameter("siape"));
 		int ramal = Integer.parseInt(rq.getParameter("ramal"));
 		int celular = Integer.parseInt(rq.getParameter("celular"));
 		String sala = rq.getParameter("sala");
@@ -35,6 +35,9 @@ public class CadastrarProfessor implements Logica {
 		p.setRamal(ramal);
 		p.setCelular(celular);
 		p.setSala(sala);
+		p.setCpf(cpf);
+		p.setIdentidade(identidade);
+		p.setEmail(email);
 
 		ProfessorDAO pD = new ProfessorDAO();
 
