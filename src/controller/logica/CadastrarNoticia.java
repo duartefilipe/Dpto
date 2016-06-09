@@ -21,7 +21,7 @@ public class CadastrarNoticia implements Logica {
 		
 		Noticia n = new Noticia();
 		n.setTitulo(titulo);
-		n.setTexto(titulo);
+		n.setTexto(texto); 
 		
 		NoticiaDAO nD = new NoticiaDAO();
 

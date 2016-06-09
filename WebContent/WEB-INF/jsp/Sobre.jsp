@@ -75,7 +75,7 @@
 								<div class="container">
 									<h2 align="center">Sobre o Departamento de Geociências</h2>
 									<hr>
-								<h4	>
+								<p	>
 								O Departamento de Geociências atende a:<br>
 									13 cursos de graduação<br>
 									07 cursos de pós-graduação<br>
@@ -118,7 +118,7 @@
 									· Mestrado em Ciências Biológicas - Biodiversidade Animal <br>
 									· Mestrado em Engenharia Civil <br>
 									· Mestrado em Geografia<br><br>
-								</h4>
+								</p>
 							</div>
 							</nav>
 						</div>

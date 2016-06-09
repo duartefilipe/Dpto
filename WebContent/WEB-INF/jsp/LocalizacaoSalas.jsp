@@ -76,15 +76,29 @@
 						<div class="list-group">
 							<nav class="navbar navbar-default navbar-static-top">
 							<div class="container">
-								<h1 align="center"><b>Avisos</b></h1>
+								<h1 align="center">
+									<b>Salas</b>
+								</h1>
 								<hr>
-								<c:forEach var="noticias" items="${noticias}">
-									<div class="thumbnail text text-center">
-										<h2><b>${noticias.titulo}</b></h2>
-										<hr>
-										<p align="center">${noticias.texto}</p>
-									</div>
-								</c:forEach>
+								<table class="text-center table table-bordered table-responsive">
+									
+									<tr>
+										<p>titulo</p>
+									</tr>
+									<tr>
+										<td>h1h1h1h1</td>
+										<td>h1h1h1h1</td>
+										<td>h1h1h1h1</td>
+									</tr>
+									<tr>
+										<td>h1h1h1h1</td>
+										<td>h1h1h1h1</td>
+										<td>h1h1h1h1</td>
+									</tr>
+								
+								</table>
+								
+								
 							</div>
 							</nav>
 						</div>

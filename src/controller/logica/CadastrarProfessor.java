@@ -3,8 +3,8 @@ package controller.logica;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import modelo.Noticia;
-import modelo.dao.NoticiaDAO;
+import modelo.Professor;
+import modelo.dao.ProfessorDAO;
 
 
 
@@ -15,26 +15,39 @@ public class CadastrarProfessor implements Logica {
 		System.out.println("Cadastrar professor");
 		
 		System.out.println(".......... dentro de cadastrar professor...............");
-		String titulo = rq.getParameter("titulo");
-		String texto = rq.getParameter("texto");
+		String nome = rq.getParameter("nome");
+		int siape = Integer.parseInt(rq.getParameter("siape"));
+		int ramal = Integer.parseInt(rq.getParameter("ramal"));
+		int celular = Integer.parseInt(rq.getParameter("celular"));
+		String sala = rq.getParameter("sala");
+		int cpf = Integer.parseInt(rq.getParameter("cpf"));
+		int identidade = Integer.parseInt(rq.getParameter("identidade"));
+		String email = rq.getParameter("email");
+
 		
-		Noticia n = new Noticia();
-		n.setTitulo(titulo);
-		n.setTexto(texto);
+		Professor p = new Professor();
+		p.setNome(nome);
+		p.setSiape(siape);
+		p.setRamal(ramal);
+		p.setCelular(celular);
+		p.setSala(sala);
+		p.setCpf(cpf);
+		p.setIdentidade(identidade);
+		p.setEmail(email);
 		
-		NoticiaDAO nD = new NoticiaDAO();
+		ProfessorDAO pD = new ProfessorDAO();
 
 		boolean cadastro;
 		
-		String pagina = "/WEB-INF/jsp/Principal.jsp";
+		String pagina = "/WEB-INF/jsp/CadastrarProfessor.jsp";
 				
-		cadastro = nD.cadastrar(n);
+		cadastro = pD.cadastrar(p);
 		
 		try{
 			if(cadastro != false){
 				System.out.println("Cadastrado!");
-				pagina = "/WEB-INF/jsp/Principal.jsp";
-				rq.setAttribute("noticias", nD.getNoticias());
+				pagina = "/WEB-INF/jsp/CadastrarProfessor.jsp";
+				rq.setAttribute("professores", pD.getProfessores());
 				
 			}else{
 				
@@ -44,6 +57,5 @@ public class CadastrarProfessor implements Logica {
 		}
 		return pagina;
 	}
-	
 	
 }

@@ -28,8 +28,12 @@ public class NoticiaDAO {
 				String titulo = not.getTitulo();
 				String texto = not.getTexto();
 				
+				System.out.println("titulo: "+not.getTitulo());
+				System.out.println("texto: "+not.getTexto());
+				
 				String sql ="INSERT INTO noticia (titulo,texto) values(?,?)";
 				PreparedStatement stmt  = con.prepareStatement(sql);
+				
 				stmt.setString(1, titulo);
 				stmt.setString(2, texto);
 				stmt.executeUpdate();
