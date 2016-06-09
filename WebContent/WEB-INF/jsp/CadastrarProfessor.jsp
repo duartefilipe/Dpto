@@ -61,10 +61,11 @@
 					</div>
 					<div class="col-md-3">
 						<div class="list-group">
-							<a href="#" class="list-group-item"> Formularios </a> <a href="#"
-								class="list-group-item"> Localização Salas de Aula </a> <a
-								href="#" class="list-group-item"> Certificados Monitoria </a> <a
-								href="#" class="list-group-item"> relatorios </a>
+							<a href="#" class="list-group-item"> Formularios </a>
+							<a href="#" class="list-group-item"> Localização Salas de Aula </a>
+							<a href="#" class="list-group-item"> Certificados Monitoria </a>
+							<a href="#" class="list-group-item"> relatorios </a>
+							<a href="MVC?logica=RedirecionaCadastrarNoticia#" class="list-group-item">Cadastrar Noticias </a>
 						</div>
 					</div>
 

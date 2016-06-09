@@ -28,7 +28,7 @@
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
 					data-toggle="dropdown">Funcionarios<b class="caret"></b></a>
 					<ul class="dropdown-menu">
-						<li><a href="#destaques">funcionario 1</a></li>
+						<li><a href="MVC?logica=RedirecionaCadastraFuncionario">Cadastrar</a></li>
 						<li><a href="#produto">funcionario 2</a></li>
 					</ul>
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
@@ -58,10 +58,11 @@
 					</div>
 					<div class="col-md-3">
 						<div class="list-group">
-							<a href="#" class="list-group-item"> Formularios </a> <a href="#"
-								class="list-group-item"> Localização Salas de Aula </a> <a
-								href="#" class="list-group-item"> Certificados Monitoria </a> <a
-								href="#" class="list-group-item"> relatorios </a>
+								<a href="#" class="list-group-item"> Formularios </a>
+								<a href="#" class="list-group-item"> Localização Salas de Aula </a>
+								<a href="#" class="list-group-item"> Certificados Monitoria </a>
+								<a href="#" class="list-group-item"> relatorios </a>
+								<a href="#" class="list-group-item"> Noticias </a>
 						</div>
 					</div>
 

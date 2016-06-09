@@ -15,7 +15,8 @@
 	<nav class="navbar navbar-default navbar-static-top">
 	<div class="container">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="#">Projeto final geociências</a>
+			<a class="navbar-brand" href="index.jsp">Projeto final
+				geociências</a>
 		</div>
 
 		<div id="navbar" class="navbar-collapse collapse">
@@ -31,13 +32,13 @@
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
 					data-toggle="dropdown">Funcionarios<b class="caret"></b></a>
 					<ul class="dropdown-menu">
-						<li><a href="MVC?logica=RedirecionaCadastraFuncionario">Cadastrar</a></li>
+						<li><a href="#destaques">funcionario 1</a></li>
 						<li><a href="#produto">funcionario 2</a></li>
 					</ul>
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
 					data-toggle="dropdown">bolsistas<b class="caret"></b></a>
 					<ul class="dropdown-menu">
-						<li><a href="MVC?logica=RedirecionaCadastraBolsista">Cadastrar</a></li>
+						<li><a href="#destaques">bolsista 1</a></li>
 						<li><a href="#produto">bolsista 2</a></li>
 					</ul></li>
 				</li>
@@ -65,8 +66,8 @@
 								class="list-group-item"> Localização Salas de Aula </a> <a
 								href="#" class="list-group-item"> Certificados Monitoria </a> <a
 								href="#" class="list-group-item"> relatorios </a> <a
-								href="MVC?logica=RedirecionaCadastrarNoticia"
-								class="list-group-item"> Cadastrar Noticias </a>
+								href="MVC?logica=RedirecionaCadastrarNoticia#"
+								class="list-group-item">Cadastrar Noticias </a>
 						</div>
 					</div>
 
@@ -74,18 +75,62 @@
 						<div class="list-group">
 							<nav class="navbar navbar-default navbar-static-top">
 							<div class="container">
-								<b><h1 align="center">Avisos</h1></b>
-								<hr>
-								<c:forEach var="noticias" items="${noticias}">
-									<div class="thumbnail text text-center">
-										<b><h2>${noticias.titulo}</h2></b>
-										<hr>
-										<p align="center">${noticias.texto}</p>
+								<form action="/Dpto/MVC?logica=CadastrarNoticia" method="post">
+									<div class="form-group">
+										<h2 align="center">Alterar Noticia</h2>
+										<label for="titulo">titulo:</label> <input
+											class="form-control" type="text" id="titulo" name="titulo" />
+										<br /> <label for="texto">texto:</label> <input
+											class="form-control" type="text" id="texto" name="texto" />
+										<br />
+
+										<button class="btn btn-primary" type="submit">Alterar</button>
 									</div>
-								</c:forEach>
+								</form>
 							</div>
 							</nav>
 						</div>
+
+						<!-- teste mostra noticias -->
+
+						<div class="thumbnail" align="center">
+							<div class="row">
+								<div class="col-md-12">
+									<section>
+									<table
+										class="text-center table table-bordered table-responsive">
+										<thead>
+										<h1 align="center">noticias cadasteradas</h1>
+											<tr>
+												<th class="text-center">titulo</th>
+												<th class="text-center">texto</th>
+												<th class="text-center">alterar</th>
+												<th class="text-center">deletar</th>
+
+											</tr>
+										</thead>
+										<tbody>
+
+											<c:forEach var="noticias" items="${noticias}">
+												<tr>
+													<td>${noticias.titulo}</td>
+													<td>${noticias.texto}</td>
+													<td><a
+														href="/Dpto/MVC?logica=alterarNoticia&&id=${noticias.id}">Alterar</a></td>
+													<td><a
+														href="/Dpto/MVC?logica=DeletarNoticia&&id=${noticias.id}">Deletar</a></td>
+												</tr>
+											</c:forEach>
+
+										</tbody>
+									</table>
+									</section>
+								</div>
+							</div>
+						</div>
+
+						<!-- teste mostra noticias -->
+
 					</div>
 				</div>
 			</div>
@@ -97,3 +142,6 @@
 	<script src="js/bootstrap.js"></script>
 </body>
 </html>
+
+
+
