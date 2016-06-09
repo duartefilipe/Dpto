@@ -96,10 +96,10 @@
 						<div class="thumbnail" align="center">
 							<div class="row">
 								<div class="col-md-12">
+								<h2>noticias cadastradas</h2>
 									<table class="text-center table table-striped table-responsive">
 										<thead>
 											<tr>
-												<h1 align="center">noticias cadastradas</h1>
 												<th class="text-center">titulo</th>
 												<th class="text-center">texto</th>
 												<th class="text-center">alterar</th>
@@ -113,13 +113,13 @@
 												<tr>
 													<td>${noticias.titulo}</td>
 													<td>${noticias.texto}</td>
-													<td><a class="btn btn-success btn-sm" data-toggle="modal" data-target="#modal"
+													<td><a
+														class="btn btn-success btn-sm glyphicon glyphicon-refresh"
 														href="/Dpto/MVC?logica=alterarNoticia&&id=${noticias.id}">
-															<div class="glyphicon glyphicon-refresh"></div>
 													</a></td>
-													<td><a a class="btn btn-danger  btn-sm"
+													<td><a a
+														class="btn btn-danger  btn-sm btn btn-success btn-sm glyphicon glyphicon-remove"
 														href="/Dpto/MVC?logica=DeletarNoticia&&id=${noticias.id}">
-															<div class="glyphicon glyphicon-remove"></div>
 													</a></td>
 												</tr>
 											</c:forEach>
@@ -138,81 +138,11 @@
 		</div>
 	</div>
 
-	<!-- modal -->
 
-	<div class="modal fade" id="modal" tabindex="-1" role="dialog"
-		aria-labelledby="myModalLabel">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal"
-						aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					<h4 class="modal-title" id="myModalLabel">TÊNIS NIKE LEBRON
-						XIII MASCULINO</h4>
-					<small>Tênis Masculino Basquete</small><br>
-					<div class="pull-right">
-						<strong>Por:R$899,90</strong><br> ou <b>10x</b> de <b>R$89,90</b><br>
-					</div>
-				</div>
-				<div class="modal-body">
-					<div class="row">
-						<div class="col-md-4">
-							<div class="thumbnail">
-								<img src="http://www.lojadanike.com.br/ArquivoExibir/566744.jpg"
-									alt="...">
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="thumbnail">
-								<img src="http://www.lojadanike.com.br/ArquivoExibir/566760.jpg"
-									alt="...">
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="thumbnail">
-								<img src="http://www.lojadanike.com.br/ArquivoExibir/566728.jpg"
-									alt="...">
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4">
-							<table class="table table-bordered">
-								<thead>
-									<tr>
-										<th>Tamanho</th>
-										<th>Esgotado</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>39</td>
-										<td>X</td>
-									</tr>
-									<tr>
-										<td>41</td>
-										<td>-</td>
-									</tr>
-									<tr>
-										<td>43</td>
-										<td>-</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-				</div>
 
-				<!-- modal -->
-
-				<script
-					src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-				<script src="js/bootstrap.js"></script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
 </body>
 </html>
 

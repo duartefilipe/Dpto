@@ -61,6 +61,7 @@
 					</div>
 					<div class="col-md-3">
 						<div class="list-group">
+							<a class="list-group-item text text-center" style="background: #E7E7E7"> MENU </a>
 							<a href="#" class="list-group-item"> Formularios </a> <a href="#"
 								class="list-group-item"> Localização Salas de Aula </a> <a
 								href="#" class="list-group-item"> Certificados Monitoria </a> <a
@@ -74,7 +75,7 @@
 						<div class="list-group">
 							<nav class="navbar navbar-default navbar-static-top">
 							<div class="container">
-								<b><h1 align="center">Avisos</h1></b>
+							<b><h1 align="center">Avisos</h1></b>
 								<hr>
 								<c:forEach var="noticias" items="${noticias}">
 									<div class="thumbnail text text-center">

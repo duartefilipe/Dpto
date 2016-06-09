@@ -96,11 +96,11 @@
 						<div class="thumbnail" align="center">
 							<div class="row">
 								<div class="col-md-12">
+									<h2>noticias cadasteradas</h2>
 									<section>
 									<table
 										class="text-center table table-bordered table-responsive">
 										<thead>
-										<h1 align="center">noticias cadasteradas</h1>
 											<tr>
 												<th class="text-center">titulo</th>
 												<th class="text-center">texto</th>
@@ -116,9 +116,14 @@
 													<td>${noticias.titulo}</td>
 													<td>${noticias.texto}</td>
 													<td><a
-														href="/Dpto/MVC?logica=alterarNoticia&&id=${noticias.id}">Alterar</a></td>
-													<td><a
-														href="/Dpto/MVC?logica=DeletarNoticia&&id=${noticias.id}">Deletar</a></td>
+														class="btn btn-success btn-sm glyphicon glyphicon-refresh"
+														href="/Dpto/MVC?logica=alterarNoticia&&id=${noticias.id}">
+
+													</a></td>
+													<td><a a
+														class="btn btn-danger  btn-sm btn btn-success btn-sm glyphicon glyphicon-remove"
+														href="/Dpto/MVC?logica=DeletarNoticia&&id=${noticias.id}">
+													</a></td>
 												</tr>
 											</c:forEach>
 
